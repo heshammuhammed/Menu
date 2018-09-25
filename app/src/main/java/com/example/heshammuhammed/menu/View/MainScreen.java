@@ -86,6 +86,7 @@ public class MainScreen extends AppCompatActivity implements View.OnClickListene
         }
     }
 
+    // Set Color and Image At Starting
     @Override
     public void showImageAndColor(String image, String color) {
         View view = this.getWindow().getDecorView();

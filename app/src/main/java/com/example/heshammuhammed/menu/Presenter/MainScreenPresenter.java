@@ -28,6 +28,7 @@ public class MainScreenPresenter implements MainScreenInterface.Presenter , Call
         main = getMainData.getData();
     }
 
+    // Get Color , Image from main Object
     @Override
     public void getMyData(Main main) {
         String image = main.getData().getRestaurant().getImage();

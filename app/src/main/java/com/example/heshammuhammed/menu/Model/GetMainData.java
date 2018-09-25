@@ -36,8 +36,8 @@ public class GetMainData {
         this.callBackModel = callBackModel;
     }
 
+    // Get Data From Retrofit For First Screen (Model)
     public Main getData() {
-        Toast.makeText(context, "HFOD", Toast.LENGTH_LONG).show();
         menuConnection = Connection.getConnection().create(MenuConnection.class);
         getMenu = menuConnection.getMenu(new Key(API_KEY));
         getMenu.enqueue(new Callback<Main>() {
@@ -59,10 +59,3 @@ public class GetMainData {
         return main;
     }
 }
-//                Toast.makeText(context, main.getData().getList().size() + "", Toast.LENGTH_LONG).show();
-//                for (int i = 0; i < main.getData().getList().size(); i++) {
-//                    java.util.List<List> lists = main.getData().getList();
-//                    Toast.makeText(context, lists.get(i).getTitle(), Toast.LENGTH_LONG).show();
-//                }
-//                Toast.makeText(context, main.getData().getList().get(1).getItems().get(0).getDescription() + "YES", Toast.LENGTH_LONG).show();
-//              Toast.makeText(context, main.getData().getRestaurant().getColor().toString() + " COLOR", Toast.LENGTH_LONG).show();

@@ -74,12 +74,7 @@ public class FoodList extends AppCompatActivity implements FoodListInterface.Vie
         });
     }
 
-    @Override
-    public void showData(Main main) {
-        Toast.makeText(this, "DONE", Toast.LENGTH_LONG).show();
-        Toast.makeText(this, main.getData().getRestaurant().getTitle() + " ", Toast.LENGTH_LONG).show();
-    }
-
+    // Set Main Data Screen (Image , Color , Menus List)
     @Override
     public void setData(String image, String color, List<String> list, HashMap<String, List<String>> hashMap) {
         this.listData = list;
@@ -96,6 +91,7 @@ public class FoodList extends AppCompatActivity implements FoodListInterface.Vie
         view3.setBackgroundColor(Color.parseColor(color));
     }
 
+    // Set Data of Main Menu
     @Override
     public void setMainData(String color , List<Object> list) {
         View view = findViewById(R.id.constraintLayout);
@@ -105,6 +101,7 @@ public class FoodList extends AppCompatActivity implements FoodListInterface.Vie
         recyclerView.setLayoutManager(new GridLayoutManager(this, 3));
     }
 
+    // Set Data of Sub Menu
     @Override
     public void setSubData(String color , List<Object> list) {
         View view = findViewById(R.id.constraintLayout);

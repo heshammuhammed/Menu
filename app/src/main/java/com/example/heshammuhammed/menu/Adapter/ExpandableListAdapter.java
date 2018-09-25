@@ -15,6 +15,8 @@ import java.util.List;
  * Created by HeshamMuhammed on 9/23/2018.
  */
 
+// Expandable Menu List Class
+
 public class ExpandableListAdapter extends BaseExpandableListAdapter {
 
     private Context context;

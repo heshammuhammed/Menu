@@ -10,6 +10,8 @@ import com.example.heshammuhammed.menu.View.MainScreen;
  * Created by HeshamMuhammed on 9/25/2018.
  */
 
+// Receiver to Open Application When Mobile Starts
+
 public class Receiver extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {

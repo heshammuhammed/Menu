@@ -32,6 +32,7 @@ public class GetMenu {
         this.callBackList = callBackList;
     }
 
+    // Get Data From Retrofit For Second Screen (Model)
     public void getListMenu(int id, final int switchCase , final int groupId , final int childId) {
         menuConnection = Connection.getConnection().create(MenuConnection.class);
         if (id == 1) {

@@ -35,6 +35,7 @@ public class FoodListPresenter implements FoodListInterface.Presenter, CallBackL
         getMenu.getListMenu(id, switchCase, groupId, childId);
     }
 
+    // Get Color , Image , List from main Object
     @Override
     public void setMenu(Main main) {
         List<String> mainList = new ArrayList<>();
@@ -56,6 +57,8 @@ public class FoodListPresenter implements FoodListInterface.Presenter, CallBackL
         String color = main.getData().getRestaurant().getColor();
         view.setData(image, color, mainList, mainHashMap);
     }
+
+    // Get The Data From main Object and Set In Objects ("Main Menu")
 
     @Override
     public void setMainMenu(Main main, int i) {
@@ -107,6 +110,7 @@ public class FoodListPresenter implements FoodListInterface.Presenter, CallBackL
         view.setMainData(main.getData().getRestaurant().getColor(), list);
     }
 
+    // Get The Data From main Object and Set In Objects ("Sub Menu")
     @Override
     public void setSubMenu(Main main, int i, int y) {
 

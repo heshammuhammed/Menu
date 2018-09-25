@@ -26,6 +26,8 @@ import static android.view.Window.FEATURE_NO_TITLE;
  * Created by HeshamMuhammed on 9/24/2018.
  */
 
+// Recycle View For Menu Lists
+
 public class MainRecycleView extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
     Context context;
